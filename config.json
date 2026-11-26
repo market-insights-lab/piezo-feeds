@@ -37,7 +37,12 @@
     ]
   },
   "patents": {
-    "rss_feeds": [],
+    "rss_feeds": [
+      {
+        "name": "Competitors",
+        "url": "https://patentscope.wipo.int/search/en/2f6d236c-a5ac-4521-934a-017f89a13e23/rss.xml"
+      }
+    ],
     "competitors": {
       "CTS (incl. Ferroperm, Noliac)": [
         "CTS CORP",
