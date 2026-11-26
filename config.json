@@ -1,0 +1,106 @@
+{
+  "tenders": {
+    "lookback_days_first_run": 366,
+    "lookback_days_daily": 10,
+    "search_terms": [
+      "sonar",
+      "hydrophone",
+      "\"underwater acoustic\"",
+      "\"towed array\"",
+      "\"anti-submarine\"",
+      "\"mine countermeasure\"",
+      "\"diver detection\"",
+      "\"electro-optical\"",
+      "\"EO/IR\"",
+      "\"gimbal\"",
+      "\"vibration isolation\"",
+      "\"early warning satellite\"",
+      "\"secure satellite communication\"",
+      "\"star tracker\"",
+      "\"beam steering\"",
+      "\"satellite constellation\"",
+      "\"reaction wheel\"",
+      "\"inter-satellite link\"",
+      "\"free-space optical\"",
+      "\"laser communication terminal\"",
+      "\"optical ground station\"",
+      "\"point-ahead\"",
+      "\"adaptive optics\"",
+      "\"deformable mirror\"",
+      "\"tip-tilt\"",
+      "telescope",
+      "\"structural health monitoring\"",
+      "piezoelectric",
+      "nanopositioning",
+      "hexapod",
+      "\"phased array\""
+    ]
+  },
+  "patents": {
+    "rss_feeds": [],
+    "competitors": {
+      "CTS (incl. Ferroperm, Noliac)": [
+        "CTS CORP",
+        "CTS CORPORATION",
+        "FERROPERM",
+        "NOLIAC",
+        "MEGGITT A/S"
+      ],
+      "CeramTec": [
+        "CERAMTEC"
+      ],
+      "APC International": [
+        "APC INTERNATIONAL",
+        "AMERICAN PIEZO"
+      ],
+      "TRS Technologies / Tayca": [
+        "TRS TECHNOLOGIES",
+        "TAYCA",
+        "テイカ"
+      ],
+      "Imasonic": [
+        "IMASONIC"
+      ],
+      "Innovia": [
+        "INNOVIA"
+      ],
+      "CeraComp": [
+        "CERACOMP"
+      ],
+      "Audiowell": [
+        "AUDIOWELL"
+      ],
+      "Blatek": [
+        "BLATEK"
+      ],
+      "Jiakang": [
+        "JIAKANG",
+        "佳康"
+      ],
+      "Yuhai": [
+        "YUHAI",
+        "宇海"
+      ],
+      "Risun": [
+        "RISUN"
+      ],
+      "Bangci": [
+        "BANGCI",
+        "邦瓷"
+      ],
+      "Yinguan": [
+        "YINGUAN",
+        "银冠"
+      ]
+    },
+    "note": "Add the Patentscope RSS link of the competitor search here as {\"name\": \"Competitors\", \"url\": \"https://patentscope.wipo.int/search/en/<id>/rss.xml\"}",
+    "segments": {
+      "Medical Technology": "focused ultrasound|hifu|histotripsy|lithotri|catheter|surgical|endoscop|ultrasound (imaging|probe)|ultrasonic probe|elastograph|photoacoustic|needle|implant|cochlear|micropump|neurostimul|pacemaker|ventilat|infusion|ecmo|oxygenat|patient monitor",
+      "Life Sciences Technology": "microscop|afm|nanopositi|scanning stage|autofocus|microfluid|liquid handling|dispens|pipett|cell sort|acoustic trap|droplet|sequencing|ivd|lab automation|atomi[sz]",
+      "Industrial Manufacturing & Measurement": "printhead|inkjet|additive manufactur|ultrasonic (weld|clean|cutting|machining)|flow ?meter|level sens|pressure sens|vibration sens|non-destructive|ndt|structural health|energy harvest|hydroacoust|valve|actuator for industr|motor",
+      "Aerospace & Defense": "sonar|hydrophone|underwater|towed array|sonobuoy|submarine|naval|military|missile|aircraft|avionic|uav|satellite|spacecraft|star tracker|telescope|adaptive optic|deformable mirror|tip.?tilt|gimbal|stabili[sz]",
+      "Semiconductor": "semiconductor|wafer|lithograph|mass flow|gas flow control|wire bond|wire clamp|euv",
+      "Integrated Photonics": "photonic|optical fiber|fibre|fiber align|fiber coupl|optical (switch|interconnect|probe)|laser align|silicon photonic|beam steer"
+    }
+  }
+}
