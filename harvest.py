@@ -1,7 +1,7 @@
 """Daily harvester: piezo-relevant EU tenders (TED API) and patents (Patentscope RSS).
 Keeps everything ever found in data/*.json and rewrites feeds/*.xml (RSS 2.0) for the Valona Research App.
 Standard library only."""
-import json, os, re, html, time, urllib.request, datetime as dt
+import json, os, re, html, time, urllib.request, urllib.error, datetime as dt
 from pathlib import Path
 from email.utils import format_datetime, parsedate_to_datetime
 from xml.sax.saxutils import escape as e
@@ -34,7 +34,11 @@ def ted_search(query, page):
     body = json.dumps({"query": query, "limit": 250, "page": page,
         "fields": ["publication-number", "notice-title", "buyer-name", "publication-date", "deadline-receipt-tender-date-lot"]}).encode()
     req = urllib.request.Request("https://api.ted.europa.eu/v3/notices/search", data=body, headers=UA)
-    return json.load(urllib.request.urlopen(req, timeout=60))
+    for attempt in range(5):
+        try: return json.load(urllib.request.urlopen(req, timeout=60))
+        except urllib.error.HTTPError as ex:
+            if ex.code != 429 or attempt == 4: raise
+            time.sleep(int(ex.headers.get("Retry-After") or 0) or 10 * (attempt + 1))
 
 def segment(text):
     if re.search(r"sonar|hydro|underwater|unterwasser|subacv|podwodn|povandenin|ROV|AUV|UUV|multibeam|echolot|naval|navy|marine|submarin|torped|sonobuoy|towed array|mine (hunt|counter)|defen[cs]e|military|armed forces|bundeswehr|wehrtechn|bwb|ministry of defen|armée|ejército|wojsk|antisub|anti-sub|diver detection|side.?scan", text, re.I): return "Aerospace & Defense"
@@ -68,7 +72,8 @@ def harvest_tenders():
                     deadline=first(n.get("deadline-receipt-tender-date-lot"))[:10], relevance=rel, why=why, segment=sub, dedupe=key,
                     link=f"https://ted.europa.eu/en/notice/-/detail/{pn}")
             if len(d.get("notices", [])) < 250: break
-            time.sleep(0.5)
+            time.sleep(1)
+        time.sleep(2)
     save("tenders.json", store)
     print(f"Tenders: {new} new, {len(store)} total")
     return store
