@@ -4052,5 +4052,44 @@
   "segments": [],
   "relevance": "Low",
   "why": "CTS (incl. Ferroperm, Noliac): piezo patent outside the six business fields"
+ },
+ "EP13387325": {
+  "id": "EP13387325",
+  "title": "PIEZOELECTRIC TRANSFORMER WITH VOLTAGE FEEDBACK",
+  "link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=EP13387325",
+  "abstract": "A piezoelectric transformer (200) with voltage feedback is disclosed. The transformer comprises a piezoelectric plate of predetermined length (L), width (W) and height (H) with a driving section (202) having alternatingly stacked plurality of piezoelectric ceramic layers having internal interdigitated layers. A driven section (206) including an unpolarized dielectric section (208), a voltage feedback section (220) in the form of a multilayer electrode structure or an outer strip, and a normally unpolarized dielectric section (222) is also disclosed. The transformer generates an output voltage at an output terminal by the piezoelectric vibration transmitted from the driving section. A feedback control circuit is connected to the voltage feedback section. The isolated voltage feedback provides feedback control to keep the transformer operating at the proper resonant frequency even if there is a change in output load of the transformer.",
+  "date": "2000-08-16",
+  "applicant": "CTS CORP",
+  "feed": "Competitors",
+  "competitor": "CTS (incl. Ferroperm, Noliac)",
+  "segments": [],
+  "relevance": "High",
+  "why": "Competitor filing: CTS (incl. Ferroperm, Noliac); piezo material or element – core technology"
+ },
+ "EP293716365": {
+  "id": "EP293716365",
+  "title": "ULTRASONIC FLOW MEASUREMENT",
+  "link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=EP293716365",
+  "abstract": "An ultrasonic flow measurement system is disclosed. The system comprises a signal generator (32) configured to generate a first excitation signal (25) for a first ultrasonic transducer (9) and a second excitation signal (26) for a second, different ultrasonic transducer (10). The system comprises a phase differentiator (33) configured to generate a differential phase angle signal (34) indicative of a difference in phase angle between first and second receive signals (27, 28) received from the first and second transducers which is indicative of flow rate.",
+  "date": "2020-04-22",
+  "applicant": "RENESAS ELECTRONICS CORP",
+  "feed": "Competitors",
+  "competitor": "",
+  "segments": [],
+  "relevance": "Low",
+  "why": "Applicant not on the competitor list"
+ },
+ "WO2018228658": {
+  "id": "WO2018228658",
+  "title": "ULTRASONIC FLOW MEASUREMENT",
+  "link": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2018228658",
+  "abstract": "An ultrasonic flow measurement system is disclosed. The system comprises a signal generator (32) configured to generate a first excitation signal (25) for a first ultrasonic transducer (9) and a second excitation signal (26) for a second, different ultrasonic transducer (10). The system comprises a phase differentiator (33) configured to generate a differential phase angle signal (34) indicative of a difference in phase angle between first and second receive signals (27, 28) received from the first and second transducers which is indicative of flow rate.",
+  "date": "2018-12-20",
+  "applicant": "RENESAS ELECTRONICS CORPORATION; RENESAS ELECTRONICS EUROPE GMBH",
+  "feed": "Competitors",
+  "competitor": "",
+  "segments": [],
+  "relevance": "Low",
+  "why": "Applicant not on the competitor list"
  }
 }
